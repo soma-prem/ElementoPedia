@@ -17,8 +17,13 @@ HTML, CSS, JavaScript
 ,MySQL
 ,AI API integration
 ![images_alt](one.png)
+
 ![images_alt](two.png)
+
 ![images_alt](three.png)
+
 ![images_alt](four.png)
+
 ![images_alt](five.png)
+
 ![images_alt](six.png)

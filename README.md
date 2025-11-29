@@ -16,8 +16,9 @@ HTML, CSS, JavaScript
 ,PHP (XAMPP)
 ,MySQL
 ,AI API integration
-![images_alt](one.jpg)
-![images_alt](two.jpg)
-![images_alt](three.jpg)
-![images_alt](four.jpg)
-![images_alt](five.jpg)
+![images_alt](one.png)
+![images_alt](two.png)
+![images_alt](three.png)
+![images_alt](four.png)
+![images_alt](five.png)
+![images_alt](six.png)

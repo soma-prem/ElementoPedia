@@ -13,9 +13,9 @@ AI assistant "Elemind"
 🛠️ Tech Stack
 
 HTML, CSS, JavaScript
-PHP (XAMPP)
-MySQL (optional)
-AI API integration
+,PHP (XAMPP)
+,MySQL
+,AI API integration
 ![images_alt](one.jpg)
 ![images_alt](two.jpg)
 ![images_alt](three.jpg)

@@ -1,0 +1,175 @@
+.orbitone {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed green;
+    margin: 40px;
+    position: relative;
+    border-radius: 50%;
+    background-color: rgba(144, 238, 144, 0.486);
+
+}
+
+.orbittwo {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed violet;
+    background-color: rgba(255, 192, 203, 0.514);
+    margin: 80px;
+    position: relative;
+    border-radius: 50%;
+
+}
+
+.orbitthree {
+    width: 280px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed blueviolet;
+    background-color: rgba(135, 207, 235, 0.514);
+    margin: 80px;
+    position: relative;
+    border-radius: 50%;
+
+}
+
+
+.orbitfour {
+    width: 360px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed yellowgreen;
+    background-color: rgba(255, 255, 0, 0.322);
+    margin: 80px;
+    position: relative;
+    border-radius: 50%;
+
+}
+
+.orbitfive {
+    width: 440px;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed orange;
+    background-color: rgba(255, 166, 0, 0.253);
+    margin: 80px;
+    position: relative;
+    border-radius: 50%;
+
+}
+
+.orbitsix {
+    width: 520px;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed rgba(255, 0, 0, 0.637);
+    background-color: rgba(190, 124, 86, 0.123);
+    margin: 80px;
+    position: relative;
+    border-radius: 50%;
+
+}
+
+.orbitseven {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed brown;
+    background-color: rgba(187, 180, 170, 0.158);
+    margin: 80px;
+    position: relative;
+    border-radius: 50%;
+
+}
+
+.neutron {
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    border: 1px solid goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.orbit-wrapperone {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+}
+
+.orbit-wrappertwo {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+}
+
+.orbit-wrapperthree {
+    position: absolute;
+    width: 360px;
+    height: 360px;
+}
+
+.orbit-wrapperfour {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+}
+
+.orbit-wrapperfive {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+}
+
+.orbit-wrappersix {
+    position: absolute;
+    width: 720px;
+    height: 720px;
+}
+
+.orbit-wrapperseven{
+    position: absolute;
+    width: 840px;
+    height: 840px;
+}
+
+
+.electron {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: red;
+    top: 0;
+    left: 50%;
+    border-radius: 50%;
+
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEMENTOPEDIA - Login Page</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="nav-main">
+        <div class="nav-one">
+            <img class="nav-one-imgo" src="images/logo.png" alt="logo">
+            <img class="nav-one-imgt" src="images/logoname.png" alt="logoname">
+        </div>
+        <div class="nav-two">
+        </div>
+    </div>
+    <div class="container">
+        <div class="title">
+            <h1>LOGIN</h1>
+        </div>
+        <div class="form-container">
+            <form action="login.php" method="post">
+                <label for="username">Username : </label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <br><br>
+                <label for="password">Password :</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <br><br><br>
+                <input class="button" type="submit" value="Login">
+                <p>Create new account ! <a href="sign.html" style="text-decoration: none;color: blue;">Sign-in</a></p>
+            </form>
+
+        </div>
+
+        <video id="bg-video" autoplay muted loop playsinline>
+            <source src="images/loginbg.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+        </video>
+
+        <script>
+    // Check if error=1 is present in URL
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('error') === '1') {
+        alert("Invalid username or password!");
+    }
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+/* project/periodtable.css */
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1600px;
+    height: 700px;
+    background-color: transparent;
+    flex-direction:row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    width: 1800px;
+    height: 100%;
+    border-collapse: separate;
+    border-spacing: 2px;
+    table-layout: fixed;
+    justify-content: space-between;
+}
+
+td {
+    text-align: center;
+    border: 1px solid black;
+    /* Default border for all cells */
+    padding: 5px;
+    /* Add some padding for content */
+}
+
+td:empty {
+    border: none;
+    /* No border for empty cells */
+    background-color: transparent;
+}
+.nonmetal {
+    background-color: rgba(117, 243, 117, 0.9);
+}
+.noble {
+    background-color: rgba(126, 227, 247, 0.9);
+}
+.alkali {
+    background-color: rgba(243, 191, 131, 0.938);
+}
+.alkaline {
+    background-color: rgba(161, 167, 172, 0.356);
+}
+.semimetal {
+    background-color: rgba(240, 191, 85, 0.9);
+}
+.poormetal {
+    background-color: rgba(175, 186, 214, 0.9);
+}
+.transition {
+    background-color: rgba(85, 142, 196, 0.767);
+}
+.lanthanides {
+    background-color: rgba(241, 142, 142, 0.9);
+}
+.actinides {
+    background-color: rgb(239, 241, 95);
+}
+.unknown {
+    background-color: rgba(126, 123, 123, 0.9);
+}
+
+#color-key {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    max-width: 90px;
+    margin: 15px;
+    height: 650px;
+}
+
+.highlight {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    background-color: rgb(226, 226, 221);
+}
+
+.highlight button {
+    width: 100px;
+    padding: 8px 14px;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    background: white; /* Green gradient */
+    border: none;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.highlight button:hover {
+    border: 2px solid black;
+}
+
+.highlight button:active {
+    transform: scale(0.98);
+}
+
+h3 {
+    font-size: small;
+}

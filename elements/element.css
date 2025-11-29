@@ -1,0 +1,232 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.elementbox {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.symbols {
+    display: flex;
+    align-items: center;
+    /* vertically align center (optional) */
+    justify-content: space-evenly;
+    /* spacing between the two boxes (optional) */
+}
+
+.color {
+    width: 300px;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-top: 90px;
+}
+
+.info-section {
+    position: relative;
+    margin: 50px auto;
+    background-color: transparent;
+    border-radius: 12px;
+    border: 2px solid black;
+    padding: 40px;
+    width: 1300px;
+}
+
+
+.information {
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #004d99;
+    border-bottom: 2px solid blueviolet;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+strong {
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #004080;
+    text-decoration: none;
+}
+
+/* Responsive Tweaks */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    img,
+    iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.back-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 20px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.back-btn:hover {
+    background-color: #9b9797;
+}
+
+.ai-box {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+      border: 1px solid black;
+
+}
+
+.ai-box h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #00e0ff, #ff8af0);
+    font-weight: bold;
+}
+
+.ai-box textarea {
+    width: 980px;
+    padding: 20px 0 80px 10px;
+    border: none;
+    resize: none;
+    margin-left: 200px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    outline: none;
+    border: 1px dashed black
+}
+
+.ai-box textarea::placeholder {
+    color: grey;
+}
+
+.ai-box button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: skyblue;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.ai-box button:hover {
+    background-color: blue;
+    color: white;
+}
+
+#response {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(30, 30, 63, 0.8);
+    color: #ffffff;
+    white-space: pre-wrap;
+    font-size: 16px;
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    padding: 10px;
+    text-align: justify;
+}
+
+
+#progress-bar {
+    width: 0%;
+    height: 5px;
+    background-color: #0bceaf;
+    transition: width 7s linear;
+    margin-top: 20px;
+    display: none;
+}
+
+#model {
+    position: fixed;
+    top: 80px;
+    right: 1000px;
+    width: 300px;
+    height: auto;
+    z-index: 1000;
+  }
+
+ /* Specific background colors for element categories */
+#nonmetal { background-color: rgba(117, 243, 117, 0.9); } /* Light Green */
+.noble { background-color: rgba(36, 156, 196, 0.9); } /* Light Blue */
+.alkali { background-color: rgba(243, 191, 131, 0.938); } /* Light Orange */
+.alkaline { background-color: rgba(161, 167, 172, 0.356); } /* Lighter Blue */
+.semimetal { background-color: rgba(240, 191, 85, 0.9); } /* Light Brown */
+.poormetal { background-color: rgba(175, 186, 214, 0.9); } /* Light Purple */
+.transition { background-color: rgba(85, 142, 196, 0.767); } /* Light Lavender */
+.lanthanides { background-color: rgba(241, 142, 142, 0.9); } /* Light Red */
+.actinides { background-color: rgb(239, 241, 95); } /* Lighter Purple */
+.unkonwn { background-color: rgba(126, 123, 123, 0.9); } /* Light Gray */

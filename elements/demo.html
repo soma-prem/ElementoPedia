@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Class Headings</title>
+    <style>
+        .color {
+            background-color: transparent;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="head1" class="color">Heading 1</h1>
+    <h1 id="head2" class="color">Heading 2</h1>
+    <h1 id="head3" class="color">Heading 3</h1>
+
+    <button onclick="colorHeading(1)">Color Heading 1</button>
+    <button onclick="colorHeading(2)">Color Heading 2</button>
+    <button onclick="colorHeading(3)">Color Heading 3</button>
+
+    <script>
+        function colorHeading(num) {
+
+
+            // Apply color based on button clicked
+            switch (num) {
+                case 1:
+                    let heads = document.getElementsByClassName("color");
+                    for (i = 0; i < 3; i++) {
+                        heads[i].style.backgroundColor = "red";   // first heading
+                    }
+                    break;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

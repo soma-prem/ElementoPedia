@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEMENTOPEDIA - Login Page</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="sign.css">
+</head>
+
+<body>
+    <div class="nav-main">
+        <div class="nav-one">
+            <img class="nav-one-imgo" src="images/logo.png" alt="logo">
+            <img class="nav-one-imgt" src="images/logoname.png" alt="logoname">
+        </div>
+        <div class="nav-two">
+           
+        </div>
+    </div>
+    <div class="container">
+        <div class="title">
+            <h1>Sign - Up</h1>
+        </div>
+        <div class="form-container">
+            <form action="sign.php" method="post">
+                <label for="username">Username : </label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <br><br>
+                <label for="password">Password :</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <span class="toggle-password" onclick="toggleVisibility('password', this)">👁️</span>
+                </div>
+                <br><br><br>
+
+                <label for="conpassword">Confirm Password :</label>
+                <div class="password-wrapper">
+                    <input type="password" id="conpassword" name="conpassword" placeholder="Confirm Password" required>
+                    <span class="toggle-password" onclick="toggleVisibility('conpassword', this)">👁️</span>
+                </div>
+                <br><br><br>
+
+                <input class="button" type="submit" value="Sign up">
+                <p>Already have an account ! <a href="index.html" style="text-decoration: none; color: blue;">Login</a>
+                </p>
+            </form>
+
+        </div>
+
+        <video id="bg-video" autoplay muted loop playsinline>
+            <source src="images/loginbg.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+        </video>
+
+        <script>
+            function toggleVisibility(fieldId, icon) {
+                const field = document.getElementById(fieldId);
+                if (field.type === "password") {
+                    field.type = "text";
+                    icon.textContent = "🙈";
+                } else {
+                    field.type = "password";
+                    icon.textContent = "👁️";
+                }
+            }
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const error = urlParams.get('error');
+
+            if (error === '1') {
+                alert("Signup failed! Please try again.");
+            } else if (error === '2') {
+                alert("Signup successful!");
+            } else if (error === '3') {
+                alert("Invalid email format!");
+            } else if (error === '4') {
+                alert("Passwords do not match!");
+            }
+        </script>
+
+</body>
+
+</html>

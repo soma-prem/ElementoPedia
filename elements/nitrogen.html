@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELEMENTOPEDIA - Nitrogen</title>
+  <link rel="icon" type="image/png" href="../images/icon.png" />
+  <link rel="stylesheet" href="../navbar.css" />
+  <link rel="stylesheet" href="element.css" />
+  <link rel="stylesheet" href="electron.css" />
+      <script src="demo.js" ></script>
+
+</head>
+
+<body>
+  <div class="nav-main">
+    <div class="nav-one">
+      <img class="nav-one-imgo" src="../images/logo.png" alt="logo" />
+      <img class="nav-one-imgt" src="../images/logoname.png" alt="logoname" />
+    </div>
+    <div class="nav-two">
+      <a href="../homes.html">Home</a>
+      <a href="../Table.html">Table</a>
+      <a href="../about.html">About</a>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <div class="symbols">
+      <div class="elementbox" style="background-color: rgba(117, 243, 117, 0.9);">
+        <p>7</p>
+        <h2>N</h2>
+        <h3>Nitrogen</h3>
+        <p>14.007</p>
+      </div>
+
+      <div class="orbittwo">
+        <div class="orbitone">
+          <div class="neutron"></div>
+          <div class="orbit-wrapperone" style="animation: spin 4s linear infinite;">
+            <div class="electron" style="transform: translate(-50%, -50%);"></div>
+            <div class="electron" style="transform: translate(-50%, 550%);"></div>
+          </div>
+          <div class="orbit-wrappertwo" style="animation: spin 4s linear reverse infinite;">
+            <div class="electron" style="transform: translate(-550%, 550%);"></div>
+            <div class="electron" style="transform: translate(450%, 550%);"></div>
+            <div class="electron" style="transform: translate(-50%, 1050%);"></div>
+            <div class="electron" style="transform: translate(-50%, 50%);"></div>
+            <div class="electron" style="transform: translate(-400%, 200%);"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="color">
+        <pre style="color: green;"> -----  K shell</pre>
+        <br>
+        <pre style="color: violet;"> -----  L shell</pre>
+        <br>
+        <div style="width: 20px; height: 20px; background-color: gold; display: inline-block; border-radius: 50%;">
+          <pre>      Nucleus contains  (7 protons + 7 neutrons )</pre>
+        </div>
+        <br>
+        <br>
+        <div style="width: 20px; height: 20px; background-color: red; display: inline-block; border-radius: 50%;">
+          <pre>      Electron</pre>
+          <br>
+          <pre> ( 2 , 5 ) </pre>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+
+      <div style="display: flex; flex-direction: column;">
+
+        <h2>Nitrogen - Element Details</h2>
+        <p><strong>Symbol:</strong> N</p>
+        <p><strong>Atomic Number:</strong> 7</p>
+        <p><strong>Atomic Mass:</strong> 14.007 u</p>
+        <p><strong>Electron Configuration:</strong> 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>3</sup></p>
+        <p><strong>Group:</strong> 15 (Pnictogens)</p>
+        <p><strong>Period:</strong> 2</p>
+        <p><strong>Block:</strong> p-block</p>
+        <p><strong>Category:</strong> Non-metal</p>
+        <p><strong>State at Room Temperature:</strong> Gas</p>
+        <p><strong>Color:</strong> Colorless (gas)</p>
+        <p><strong>Melting Point:</strong> -210 °C</p>
+        <p><strong>Boiling Point:</strong> -196 °C</p>
+      </div>
+      <img src="../images/elements/nitrogen.jpg" alt="nitrogen Image" class="element-image"
+        style="align-items: end; width: 600px ; height: 400px;">
+
+    </div>
+
+    <h2>Discovery</h2>
+    <p>Nitrogen was discovered in 1772 by Scottish physician Daniel Rutherford, who removed oxygen and carbon dioxide
+      from air and showed that the remaining gas could not support life or combustion.</p>
+
+    <h2>Abundance & Sources</h2>
+    <p>Nitrogen makes up about 78% of the Earth's atmosphere by volume. It is obtained by the fractional distillation of
+      liquid air.</p>
+
+    <h2>Uses</h2>
+    <ul>
+      <li>Used in the production of ammonia for fertilizers via the Haber process.</li>
+      <li>As a protective gas in food packaging to prevent spoilage.</li>
+      <li>Liquid nitrogen is used as a cryogen for freezing and storing biological samples.</li>
+      <li>Used in electronics, explosives, and welding.</li>
+    </ul>
+
+    <h2>Interesting Facts</h2>
+    <ul>
+      <li>Nitrogen is essential for life — it's a major part of amino acids, proteins, and DNA.</li>
+      <li>Despite its abundance, nitrogen must be fixed (converted) into usable forms by bacteria or industrial
+        processes.</li>
+      <li>It is extremely inert in its gaseous diatomic form (N₂) due to a strong triple bond.</li>
+    </ul>
+
+    <h2>Did You Know?</h2>
+    <p>Lightning can break the strong N≡N bond in atmospheric nitrogen, allowing it to combine with oxygen and form
+      nitrogen oxides — a natural form of nitrogen fixation.</p>
+
+    <h2>Watch & Learn</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/m9bmkr5A23k" allowfullscreen></iframe>
+
+    <h2>More Information</h2>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Nitrogen" target="_blank">Wikipedia - Nitrogen</a></li>
+    </ul>
+    <div class="ai-box">
+      <h1>Ask EleMind</h1>
+      <img src="../images/mini.png" id="model">
+      <textarea id="prompt" rows="4" placeholder="Type your question here..."></textarea>
+      <br>
+      <button type="button" onclick="sendPrompt()">Ask</button>
+      <div id="progress-bar"></div>
+      <div id="response"></div>
+    </div>
+
+    <a href="../table.html" class="back-btn">Back</a>
+
+
+</body>
+
+</html>
